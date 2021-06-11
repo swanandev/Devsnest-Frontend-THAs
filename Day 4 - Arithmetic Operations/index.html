@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./index.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="input-div">
+        <label>Number 1</label> 
+        <input placeholder="Enter 1st No." type="number" id="num1"/><br> 
+        <label>Number 2</label>
+        <input placeholder="Enter 2nd No." type="number" id="num2"/><br>
+    </div>
+
+    <div class="button-div">
+        <button id="add-bttn" onclick="performOperation(1)">Add</button>
+        <button id="subtract-bttn" onclick="performOperation(2)">Subtract</button>
+        <button id="multiply-bttn" onclick="performOperation(3)">Multiply</button>
+        <button id="divide-bttn" onclick="performOperation(4)">Divide</button>
+    </div>
+
+    <div class="output-div">
+        <div class="circle">
+            <h2 id="ans">Answer</h2>
+        </div>
+    </div>
+</body>
+</html>
