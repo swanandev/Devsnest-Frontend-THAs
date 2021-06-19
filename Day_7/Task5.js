@@ -2,33 +2,19 @@
  * Program to get Volume of Cylinder
  */
 
-let cylinders = [
-    {
-        rad: 2.5,
-        height: 5
-    },
-    {
-        rad: 4,
-        height: 2.5
-    },
-    {
-        rad: 3,
-        height: 6
-    },
-    {
-        rad: 2,
-        height: 5.4
-    }
-]
-
 const PI = 3.14;
 
-for (let ckey in cylinders){
-    let cylinder = cylinders[ckey];
-    console.log("\nFor Cylinder ",ckey + 1);
-    console.log("\tRadius: ", cylinder.rad);
-    console.log("\tHeight: ", cylinder.height);
-    console.log("\tVolume: ", 
-        Math.round((PI * Math.pow(cylinder.rad, 2) * cylinder.height) 
-        * 10000 ) / 10000,"\n");
-};
+function Cylinder(rad, height){
+    this.rad = rad;
+    this.height = height;
+}
+
+Cylinder.prototype.getVolume = function(){
+    return Math.round((PI * Math.pow(this.rad, 2) * this.height)).toFixed(4);
+}
+
+
+let cylinder = new Cylinder(4, 2.5);
+console.log("Radius: ", cylinder.rad);
+console.log("Height: ", cylinder.height);
+console.log("\nVolume: ", cylinder.getVolume(),"\n");
