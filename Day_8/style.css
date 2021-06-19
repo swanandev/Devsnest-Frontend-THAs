@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    margin-top: 150px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    background-color: royalblue;    
+}
+
+.pix{
+    background-color: royalblue;
+    width: 20px;
+    height: 20px;
+}
+
+.pix:hover{
+    background-color: black;
+    opacity: 0.4;
+}
+
+.selected{
+    background-color: black;
+}
