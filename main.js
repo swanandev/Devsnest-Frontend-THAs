@@ -20,7 +20,7 @@ for (let i=0; i < day_nos.length; i++){
     pix.setAttribute('id', (i+1));
     pix.addEventListener('click',() => {
         //pix.classList.toggle('booked');
-        window.location.href = 'Devsnest-Frontend-THAs/Day_' + (day_nos[i]);
+        window.location.href = '/Devsnest-Frontend-THAs/Day_' + (day_nos[i]);
     });
     pix.appendChild(text);
     thaGridClass.appendChild(pix);
