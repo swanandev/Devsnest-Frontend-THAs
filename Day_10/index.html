@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 Cards Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-over hidden">
+        <img src="./imgs/ball.png" width="250" height="200" style="z-index: 3;"/>
+        <h1>You Won!!</h1>
+
+        <a href="" class="button">Play Again!!!</a>
+    </div>
+    <div class="in-game">
+        <h1>Matches : <span id="num-matches">0</span></h1>
+        <div class="card-holder"></div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

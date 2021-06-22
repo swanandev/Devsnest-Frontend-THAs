@@ -1,0 +1,131 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./imgs/back.jpg);
+    font-family:'Roboto',sans-serif;
+    background-color: black;
+    background-size: cover;
+    color: white;
+    margin: 10px 10px 30px 10px;
+    text-align: center;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1{
+    margin-bottom: 10px;    
+}
+
+button{
+    margin: 12px;
+    padding: 4px;
+    background-color: black;
+    color: white;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;    
+}
+
+a.button{
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 1em 0.3em 0.6em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#22f0df;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+a.button:hover{
+    background-color:#1f8f85;
+}
+
+.card-holder{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.card{
+    width: 250px;
+    height: 200px;
+    background-color:transparent;
+    perspective: 1000px;
+}
+
+.card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    background-color: rgba(0, 0, 0, 25%);
+    backdrop-filter: blur(6px);
+}
+
+.do-flip{
+    transform: rotateY(180deg);
+}
+
+.card-back{
+    transform: rotateY(180deg);
+    background-color: grey;
+}
+
+img{
+    object-fit: cover;
+}
+
+.ball{
+    width: 172px;
+    height: 172px;
+    z-index: 3;
+}
+
+.unknown{
+    opacity: 1;
+}
+
+.game-over{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 25%);
+    backdrop-filter: blur(6px);
+}
+
+
+.hidden{
+    visibility: hidden;
+    max-height: 0px;
+}
