@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    --background: #1B262C;
+    --dark-blue: #0F4C75;
+    --blue-back: #102835;
+    --light-blue: #00B7C2;
+    --stext-color: #FDCB9E;
+    --dark-green: #179213;
+    --dark-red: #f50a16;
+    --text: #ffffff;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 8vh 8vw 8vh 8vw;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px 4px 28px 4px;
+}
+
+h1, h2{
+    margin: 8px;
+}
+
+.question-div{
+    margin: 12px;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-div{
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer-div{
+    margin: 12px;
+    padding: 12px;
+    font-size: larger;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    background-color: var(--blue-back);
+    border: 1px solid white;
+}
+
+.option-bttn{
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    align-self: center;
+    margin: 1em 0em 0.6em 0em;
+    border-radius: 0.3em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:var(--light-blue);
+    text-align:center;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.option-bttn:hover{
+    background-color: var(--dark-blue);
+}
+
+.answer-description{
+    visibility: hidden;
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.quiz-end{
+    visibility: hidden;
+    margin-top: 1.5em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid white;
+    background-color: var(--blue-back);
+}
