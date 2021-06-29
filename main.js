@@ -10,7 +10,7 @@ const createHrefElement = (day_no) => {
     anchor.innerHTML = "Day "+ day_no;
 }
 
-const day_nos = ['1_2', '3', '4', '5', '6', '7', '8', '9','10', '11'];
+const day_nos = ['1_2', '3', '4', '5', '6', '7', '8', '9','10', '11', '12'];
 
 for (let i=0; i < day_nos.length; i++){
     let pix = document.createElement('div');
