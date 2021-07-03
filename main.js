@@ -12,17 +12,28 @@ const createHrefElement = (day_no) => {
 
 const day_nos = ['01_2', '03', '04', '05', '06', '07', '08', '09','10', '11', '12', '13'];
 
-for (let i=0; i < day_nos.length; i++){
-    let pix = document.createElement('div');
+const react_day_nos = ['16'];
+
+let count = day_nos.length + react_day_nos.length;
+
+const createTHADiv = (inx, day_no, url, ) => {
+    let thaDiv = document.createElement('div');
     let text = document.createElement('p');
-    text.innerHTML = "Day " + day_nos[i];
-    pix.setAttribute('class','pix');
-    pix.setAttribute('id', (i+1));
-    pix.addEventListener('click',() => {
+    text.innerHTML = "Day " + day_no;
+    thaDiv.setAttribute('class','thaDiv');
+    thaDiv.setAttribute('id', (inx+1));
+    thaDiv.addEventListener('click',() => {
         //pix.classList.toggle('booked');
-        window.location.href = '/Devsnest-Frontend-THAs/Day_' + (day_nos[i]);
+        window.location.href = '/Devsnest-Frontend-THAs/Day_' + (url);
     });
-    pix.appendChild(text);
-    thaGridClass.appendChild(pix);
+    thaDiv.appendChild(text);
+    return thaDiv;
 }
 
+day_nos.forEach( (day_no, inx) => {
+    thaGridClass.appendChild(createTHADiv(inx, day_no, day_no));
+})
+
+react_day_nos.forEach( (day_no, inx) => {
+    thaGridClass.appendChild(createTHADiv(day_nos.length + inx, day_no, day_no+"/build/"));
+})
