@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomy Picture of the Day!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-title">Astronomy Picture of the Day!</div>
+    </div>
+    <div class="content">
+        <div class="date-sel">
+            <div class="date-input">
+                <label for="date-picker">Select Date: </label>
+                <input id="date-picker" type="date"/>
+            </div>
+            <div id="fetch-bttn" class="button">Fetch APOD</div>
+        </div>
+        <div class="apod-wrapper">
+            <div class="display-image">
+                <img id="dp" src="" alt="Astronomy Image">
+            </div>
+            <div class="apod-details">
+                <p class="apod-title"></p>
+                <p class="apod-date"></p>
+                <p class="apod-desc"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
