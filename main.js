@@ -10,11 +10,13 @@ const createHrefElement = (day_no) => {
     anchor.innerHTML = "Day "+ day_no;
 }
 
+const dir = (location.hostname === "localhost" || location.hostname === "127.0.0.1" ? "/Day_" : "/Devsnest-Frontend-THAs/Day_")
+
 const day_nos = ['01_2', '03', '04', '05', '06', '07', '08', '09','10', '11', '12', '13'];
 
 const react_day_nos = ['16'];
 
-let count = day_nos.length + react_day_nos.length;
+const count = day_nos.length + react_day_nos.length;
 
 const createTHADiv = (inx, day_no, url, ) => {
     let thaDiv = document.createElement('div');
@@ -24,7 +26,7 @@ const createTHADiv = (inx, day_no, url, ) => {
     thaDiv.setAttribute('id', (inx+1));
     thaDiv.addEventListener('click',() => {
         //pix.classList.toggle('booked');
-        window.location.href = '/Devsnest-Frontend-THAs/Day_' + (url);
+        window.location.href = dir + (url);
     });
     thaDiv.appendChild(text);
     return thaDiv;

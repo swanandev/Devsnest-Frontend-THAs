@@ -1,0 +1,78 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --background: #1B262C;
+  --dark-blue: #0F4C75;
+  --blue-back: #2b3a42;
+  --light-blue: #00B7C2;
+  --stext-color: #FDCB9E;
+  --dark-green: #179213;
+  --dark-red: #f50a16;
+  --text: #ffffff;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+  color: var(--text);
+  height: 100vh;
+
+}
+
+
+.App-header{
+  background-color: var(--blue-back);
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 88vh;
+}
+
+.calorie-container{
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.fooditem-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 0.8em;
+  margin: 0.8em;
+  border-radius: 2px;
+  background-color: var(--blue-back);
+  width: 24vw;
+  border: 1px solid white;
+}
+
+.item-title{
+  text-align: left;
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 0.2em 0.4em 0.8em 0.4em;
+}
+
+.item-subtitle{
+  font-size: large;
+  margin: 0.2em 0.4em 0.2em 0.4em;
+}
