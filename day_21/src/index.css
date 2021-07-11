@@ -1,0 +1,186 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --background: #1B262C;
+  --background2: #0b212c;
+  --dark-blue: #0F4C75;
+  --blue-back: #2b3a42;
+  --light-blue: #00B7C2;
+  --stext-color: #FDCB9E;
+  --dark-green: #179213;
+  --red: #f50a16;
+  --dark-red: #81080e;
+  --text: #ffffff;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+  color: var(--text);
+  height: 100vh;
+
+}
+
+
+
+.App-header{
+  background-color: var(--blue-back);
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content{
+  margin-top: 0.6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 88vh;
+}
+
+.calorie-container{
+  height: 75vh;
+  display: flex;
+  padding-left: 0.6em;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.calorie-container::-webkit-scrollbar{
+  visibility: hidden;
+}
+
+.new-item-container{
+  height: 16vh;
+  width: 24vw;
+  padding: 0.6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.new-item-input-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 24vw;
+}
+.edit-item-input-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 24vw;
+}
+
+.new-item-input{
+  height: 2em;
+  width: 50%;
+  border-radius: 0.5em;
+  border: none;
+  padding-inline: 0.9em;
+  margin: 0.4em 0.4em;
+  font-size: small;
+}
+
+input:focus{
+  border: none;
+  outline: none;
+}
+
+.new-item-input input{
+  margin: 0.4em;
+  width: 10vw;
+  padding: .2em;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.button{
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  align-self: center;
+  margin: 0.6em 0.2em;
+  border-radius: 0.3em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  background-color:var(--light-blue);
+  text-align:center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: var(--dark-blue);
+} 
+
+.fooditem-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 0.8em;
+  margin: 0.8em;
+  border-radius: 2px;
+  background-color: var(--blue-back);
+  width: 24vw;
+  border: 1px solid white;
+}
+
+.item-subcontainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-title{
+  text-align: left;
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 0.2em 0.4em 0.8em 0.4em;
+}
+
+.item-actions{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-delete{
+  margin: 0.2em 0.4em 0.8em 0.4em;
+  background-color: var(--red);
+}
+
+.item-delete:hover{
+  background-color: var(--dark-red);
+}
+
+
+.item-subtitle{
+  font-size: large;
+  margin: 0.2em 0.4em 0.2em 0.4em;
+}
