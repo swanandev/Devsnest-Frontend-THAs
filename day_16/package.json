@@ -2,6 +2,7 @@
   "name": "chess_board_meme_card",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://destro1108.github.io/Devsnest-Frontend-THAs/day_16/build/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
