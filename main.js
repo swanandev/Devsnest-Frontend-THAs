@@ -14,7 +14,7 @@ const dir = (location.hostname === "localhost" || location.hostname === "127.0.0
 
 const day_nos = ['01_2', '03', '04', '05', '06', '07', '08', '09','10', '11', '12', '13'];
 
-const react_day_nos = ['16'];
+const react_day_nos = ['16', '17', '18', '19'];
 
 const count = day_nos.length + react_day_nos.length;
 
