@@ -8,7 +8,7 @@ const App = () => {
         <h2>Multi-Counter</h2>
       </header>
       <div className="content">
-        <CounterContainer />
+        <CounterContainer />  
       </div>
     </div>
   );
