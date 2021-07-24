@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --background: #1B262C;
+  --background2: #0b212c;
+  --dark-blue: #0F4C75;
+  --blue-back: #2b3a42;
+  --light-blue: #00B7C2;
+  --stext-color: #FDCB9E;
+  --dark-green: #179213;
+  --red: #f50a16;
+  --dark-red: #81080e;
+  --text: #ffffff;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+  color: var(--text);
+  height: 100vh;
+
+}
+
+.App-header{
+  background-color: var(--blue-back);
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content{
+  margin-top: 0.6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 88vh;
+  overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar{
+  visibility: hidden;
+}
+
+.container{
+  margin: 1.2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: fit-content;
+  height: 30vh;
+}
+
+.user-input-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 24vw;
+}
+
+.user-input{
+  height: 2em;
+  border-radius: 0.5em;
+  border: none;
+  padding-inline: 0.9em;
+  margin: 0.4em 0.4em;
+  font-size: small;
+}
+
+input:focus{
+  border: none;
+  outline: none;
+}
+
+.user-input input{
+  margin: 0.4em;
+  width: 10vw;
+  padding: .2em;
+}
+
+.data-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.data-div p{
+  padding: 0.4rem 0.4rem;
+}
+
+.button{
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  align-self: center;
+  margin: 0.6em 0.2em;
+  border-radius: 0.3em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  background-color:var(--light-blue);
+  text-align:center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: var(--dark-blue);
+} 
