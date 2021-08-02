@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Devsnest-Frontend-THAs/day_28_29/build/static/css/main.da49f6b5.chunk.css",
+    "main.js": "/Devsnest-Frontend-THAs/day_28_29/build/static/js/main.96021bdb.chunk.js",
+    "main.js.map": "/Devsnest-Frontend-THAs/day_28_29/build/static/js/main.96021bdb.chunk.js.map",
+    "runtime-main.js": "/Devsnest-Frontend-THAs/day_28_29/build/static/js/runtime-main.77d60b8f.js",
+    "runtime-main.js.map": "/Devsnest-Frontend-THAs/day_28_29/build/static/js/runtime-main.77d60b8f.js.map",
+    "static/js/2.0993e4c7.chunk.js": "/Devsnest-Frontend-THAs/day_28_29/build/static/js/2.0993e4c7.chunk.js",
+    "static/js/2.0993e4c7.chunk.js.map": "/Devsnest-Frontend-THAs/day_28_29/build/static/js/2.0993e4c7.chunk.js.map",
+    "index.html": "/Devsnest-Frontend-THAs/day_28_29/build/index.html",
+    "static/css/main.da49f6b5.chunk.css.map": "/Devsnest-Frontend-THAs/day_28_29/build/static/css/main.da49f6b5.chunk.css.map",
+    "static/js/2.0993e4c7.chunk.js.LICENSE.txt": "/Devsnest-Frontend-THAs/day_28_29/build/static/js/2.0993e4c7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.77d60b8f.js",
+    "static/js/2.0993e4c7.chunk.js",
+    "static/css/main.da49f6b5.chunk.css",
+    "static/js/main.96021bdb.chunk.js"
+  ]
+}

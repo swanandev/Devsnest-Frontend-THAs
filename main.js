@@ -50,6 +50,7 @@ const react_day_nos = [
   "25",
   "26",
   "27",
+  "28_29",
 ];
 
 const count = day_nos.length + react_day_nos.length;
