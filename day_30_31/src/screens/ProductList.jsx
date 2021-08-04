@@ -1,11 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  fetchProduct,
-  fetchProducts,
-  setCurrentProduct,
-  toggleLoading,
-} from "../store/slices/ProductSlice";
+import { fetchProducts, toggleLoading } from "../store/slices/ProductSlice";
 
 import Card from "../components/Card";
 
@@ -16,7 +11,6 @@ const ProductList = () => {
   const dispatch = useDispatch();
   const selectProduct = (id) => {
     dispatch(toggleLoading());
-    dispatch(fetchProduct(id));
   };
   console.log(wishlist);
   useEffect(() => {

@@ -11,7 +11,11 @@ export const fetchProducts = createAsyncThunk(
 
 export const fetchProduct = createAsyncThunk(
   "fetch/product",
-  async (productId, thunkAPI) => await fetchProductFromAPI(productId)
+  async (productId, thunkAPI) => {
+    const product = await fetchProductFromAPI(productId);
+    localStorage.setItem("currentProductId", productId);
+    return product;
+  }
 );
 
 const ProductSlice = createSlice({
