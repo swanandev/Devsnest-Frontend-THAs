@@ -2,6 +2,7 @@
   "name": "day_30_31",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://destro1108.github.io/Devsnest-Frontend-THAs/day_30_31/build/",
   "dependencies": {
     "@craco/craco": "^6.2.0",
     "@reduxjs/toolkit": "^1.6.1",
