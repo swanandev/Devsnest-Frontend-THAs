@@ -18,7 +18,7 @@ const App = () => {
   //console.log(isDrawerVisible);
   return (
     <div className="h-screen relative z-10 flex overflow-x-hidden flex-col items-center bg-gray-200">
-      <Router basename="/Devsnest-Frontend-THAs/day_30/build/">
+      <Router basename="/Devsnest-Frontend-THAs/day_30_31/build/">
         <Navbar openCart={handleDrawer} />
         <CartDrawer visibility={isDrawerVisible} closeCart={handleDrawer} />
         <Backdrop closeCart={handleDrawer} visibility={isDrawerVisible} />
