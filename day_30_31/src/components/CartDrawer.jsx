@@ -7,21 +7,21 @@ const CartDrawer = ({ closeCart }) => {
   const { cartItems, isDrawerVisible } = useSelector((state) => state.cart);
   const dispatch = useDispatch();
   // let inx = state.cartItems.findIndex((item) => item.id === action.payload.id);
-  console.log(cartItems);
+  //console.log(cartItems);
   const updateQuantity = (offset, inx) => {
     if (cartItems[inx].quantity + offset < 1) return;
     dispatch(changeQuantity({ inx, qty: offset }));
   };
   const removeItem = (id) => {
-    console.log(cartItems, "Removing", id);
+    //console.log(cartItems, "Removing", id);
     dispatch(removeCartItem({ id }));
   };
   return (
     <div
-      className={`h-full w-1/3 absolute transition-all ease-in-out duration-700 transform ${
+      className={`h-full w-full md:w-1/3 absolute right-0 transition-all ease-in-out duration-700 transform ${
         isDrawerVisible
-          ? "translate-x-full opacity-100 z-30"
-          : "translate-x-full opacity-0 scale-x-0 z-0"
+          ? "translate-x-0 opacity-100 z-30"
+          : "translate-x-full opacity-90 scale-x-0 z-0"
       }`}
     >
       {/* <div className=""></div> */}

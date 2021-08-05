@@ -7,5 +7,5 @@ module.exports = {
   variants: {
     stroke: ["hover"],
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };

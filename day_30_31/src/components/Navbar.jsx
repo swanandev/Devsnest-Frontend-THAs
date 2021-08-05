@@ -4,19 +4,17 @@ import { Link } from "react-router-dom";
 const Navbar = ({ openCart }) => {
   return (
     <>
-      <div className="h-14"></div>
-      <nav className="h-14 w-screen  z-10 fixed bg-white shadow-md px-8 flex flex-row items-center justify-between">
+      <div className="h-12 md:h-14"></div>
+      <nav className="h-12 md:h-14 w-screen z-10 fixed bg-white shadow-md px-4 md:px-8 flex flex-row items-center justify-between">
         <Link to="/">
-          <p className="text-4xl">OnlyStore</p>
+          <p className="text-3xl md:text-4xl">OnlyStore</p>
         </Link>
-        <div className="w-24 h-5 px-2 py-4 flex flex-row items-center justify-between">
+        <div className="w-20 md:w-24 h-5 px-2 py-4 flex flex-row items-center justify-between">
           <Link to="/wishlist">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
+              className="h-6 w-6 fill-current text-red-600 stroke-current stroke-2"
               viewBox="0 0 24 24"
-              stroke="currentColor"
             >
               <path
                 strokeLinecap="round"
@@ -30,9 +28,9 @@ const Navbar = ({ openCart }) => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
-              fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
+              fill="none"
             >
               <path
                 strokeLinecap="round"

@@ -11,10 +11,7 @@ const CartItem = ({
   image,
 }) => {
   return (
-    <div
-      key={id}
-      className="m-2 px-2 py-2 flex flex-row items-center justify-between divide-x divide-black bg-white shadow"
-    >
+    <div className="m-2 px-2 py-2 flex flex-row items-center justify-between divide-x divide-black bg-white shadow">
       <div className="w-1/3 px-3">
         <img src={image} alt="" className="py-4 w-5/6" />
       </div>
@@ -55,7 +52,7 @@ const CartItem = ({
             </svg>
           </button>
         </div>
-        <p className="text-xl font-semibold">₹{price}</p>
+        <p className="text-xl font-semibold">{(price * 70).toFixed(2)}</p>
       </div>
     </div>
   );

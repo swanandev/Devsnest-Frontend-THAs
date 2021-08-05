@@ -17,7 +17,7 @@ const App = () => {
   };
   //console.log(isDrawerVisible);
   return (
-    <div className="h-screen z-10 flex overflow-x-hidden flex-col items-center bg-gray-200">
+    <div className="h-screen relative z-10 flex overflow-x-hidden flex-col items-center bg-gray-200">
       <Router>
         <Navbar openCart={handleDrawer} />
         <CartDrawer visibility={isDrawerVisible} closeCart={handleDrawer} />
