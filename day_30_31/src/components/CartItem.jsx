@@ -52,7 +52,7 @@ const CartItem = ({
             </svg>
           </button>
         </div>
-        <p className="text-xl font-semibold">{(price * 70).toFixed(2)}</p>
+        <p className="text-xl font-semibold">₹{(price * 70).toFixed(2)}</p>
       </div>
     </div>
   );
