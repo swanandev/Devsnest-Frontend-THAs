@@ -4,7 +4,6 @@ import ThemeContext from "./components/ThemeContext";
 import TodoList from "./components/TodoList";
 
 function App() {
-  const [count, setCount] = useState(0);
   const [theme, setTheme] = useState(true);
 
   return (
